@@ -3,14 +3,14 @@ let movers = [];
 let mu = 0.1;
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(800, 200);
   for (let i = 0; i < 10; i++) {
     movers[i] = new Mover(random(width), random(50, 200), random(4, 18));
   }
 }
 
 function draw() {
-  background(0);
+  background(200);
 
   for (let mover of movers) {
     if (mouseIsPressed) {
